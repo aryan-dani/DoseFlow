@@ -451,7 +451,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function simplifyFrequency(freqText) {
-    // Basic simplification examples
     const lowerFreq = freqText.toLowerCase();
     if (lowerFreq.includes("twice") && lowerFreq.includes("daily")) {
       return "Take 2 times a day.";
@@ -475,7 +474,6 @@ document.addEventListener("DOMContentLoaded", () => {
     if (lowerFreq.includes("bedtime") || lowerFreq.includes("night")) {
       return "Take at bedtime.";
     }
-    // If no pattern matches, return the original
     return freqText;
   }
 
